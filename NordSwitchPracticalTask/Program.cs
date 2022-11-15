@@ -26,9 +26,7 @@ namespace NordSwitchPracticalTask
                     break;
                 Console.WriteLine("File does not exist");
             }
-            Console.WriteLine("File exists!");
-
-            var text = File.ReadAllText(t);
+            var text = File.ReadAllText(path);
 
             Program p = new Program();
             Console.WriteLine(p.CheckText(text));
@@ -36,7 +34,6 @@ namespace NordSwitchPracticalTask
 
             Console.ReadKey();
         }
-
         string CheckText(string text)
         {
             StringBuilder sb = new StringBuilder();
